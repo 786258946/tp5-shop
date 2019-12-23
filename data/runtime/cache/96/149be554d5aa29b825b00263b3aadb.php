@@ -1,0 +1,4 @@
+<?php
+//000000086400
+ exit();?>
+a:2:{i:0;a:14:{s:2:"id";i:9;s:6:"typeid";i:1;s:5:"title";s:6:"百度";s:3:"url";s:9:"baidu.com";s:4:"logo";s:0:"";s:10:"sort_order";i:100;s:6:"target";i:1;s:5:"email";s:0:"";s:5:"intro";s:0:"";s:6:"status";i:1;s:4:"lang";s:2:"cn";s:11:"delete_time";i:0;s:8:"add_time";i:1576998482;s:11:"update_time";i:1576998482;}i:1;a:14:{s:2:"id";i:8;s:6:"typeid";i:2;s:5:"title";s:10:"木槿Blog";s:3:"url";s:22:"https://xiaomujin.club";s:4:"logo";s:49:"/demo/uploads/allimg/20191222/1-191222150H2S1.png";s:10:"sort_order";i:100;s:6:"target";i:1;s:5:"email";s:18:"xq-ambition@qq.com";s:5:"intro";s:0:"";s:6:"status";i:1;s:4:"lang";s:2:"cn";s:11:"delete_time";i:0;s:8:"add_time";i:1576998450;s:11:"update_time";i:1576998450;}}

@@ -1,0 +1,59 @@
+<?php
+
+namespace app\admin\controller;
+use think\Db;
+use app\admin\logic\AjaxLogic;
+
+/**
+ * 所有ajax请求或者不经过权限验证的方法全放在这里
+ */
+class Ajax extends Base {
+    
+    private $ajaxLogic;
+
+    public function _initialize() {
+        parent::_initialize();
+        $this->ajaxLogic = new AjaxLogic;
+    }
+
+    /**
+     * 进入欢迎页面需要异步处理的业务
+     */
+    public function welcome_handle()
+    {
+        $this->ajaxLogic->welcome_handle();
+    }
+
+    /**
+     * 隐藏后台欢迎页的系统提示
+     */
+    public function explanation_welcome()
+    {
+        $type = input('param.type/d', 0);
+        $tpCacheKey = 'system_explanation_welcome';
+        if (1 < $type) {
+            $tpCacheKey .= '_'.$type;
+        }
+        
+        /*多语言*/
+        if (is_language()) {
+            $langRow = \think\Db::name('language')->field('mark')->order('id asc')->select();
+            foreach ($langRow as $key => $val) {
+                tpCache('system', [$tpCacheKey=>1], $val['mark']);
+            }
+        } else { // 单语言
+            tpCache('system', [$tpCacheKey=>1]);
+        }
+        /*--end*/
+    }
+
+    /**
+     * 版本检测更新弹窗
+     */
+    public function check_upgrade_version()
+    {
+        $upgradeLogic = new \app\admin\logic\UpgradeLogic;
+        $upgradeMsg = $upgradeLogic->checkVersion(); // 升级包消息
+        $this->success('检测成功', null, $upgradeMsg);  
+    }
+}
