@@ -38,3 +38,4 @@
 4、地址：
 > 前台：http://localhost/demo/index.php
 > 后台：http://localhost/demo/login.php
+5、后台登录账号密码都是：admin
