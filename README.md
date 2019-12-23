@@ -6,13 +6,13 @@
 
 ![荣誉资质页](https://xuqian.xiaomujin.club/blog/20191223/BrIFwfte0W8F.png)
 
-![在线留言页](https://xuqian.xiaomujin.club/blog/20191223/2kUiKLrXYiIg.png)
+![在线留言](https://xuqian.xiaomujin.club/blog/20191223/2kUiKLrXYiIg.png)
 
 ![联系我们页](https://xuqian.xiaomujin.club/blog/20191223/rIhsAX6VA85w.png)
 
 ![成功案例页](https://xuqian.xiaomujin.club/blog/20191223/Kl2N66xhInln.png)
 
-![新闻动态页](https://xuqian.xiaomujin.club/blog/20191223/CX0powFN3Cl4.png)
+![新闻动态](https://xuqian.xiaomujin.club/blog/20191223/CX0powFN3Cl4.png)
 
 ## 后台部分功能展示：
 ![后台登录页](https://xuqian.xiaomujin.club/blog/20191223/KOnnE3fbU5Fd.png)
